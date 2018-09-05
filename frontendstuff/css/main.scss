@@ -1,0 +1,81 @@
+$bannerColor: #181919;
+$spotifyGreen: #1ed760;
+$card-color:hsl(20, 20%, 29%);
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    }
+.bannertext {
+    color: white;
+}
+.headerTitle {
+    font-family: 'Proxima Nova', Georgia, sans-serif;
+    font-size: 46px;
+    margin: 0;
+    color: #ffffff;
+    padding: 10px;
+}
+.header {
+    background-color: $bannerColor; /* off black */
+    margin: 0;
+    box-shadow: -5px 5px 10px #272727;
+    z-index: 99;
+    width:100%;
+    top: 0;
+    position: fixed;
+}
+    
+    .footeeer {
+      background-color: $bannerColor; /* off black */
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      color: #ffffff;
+      padding-left: 20px;
+      padding-top: 20px;
+      padding-bottom: 20px;
+    
+    }
+    #developer {
+      display: inline;
+      padding-right: 20px;
+    }
+    
+    .gh {
+      color: #ffffff;
+    }
+    .gh:hover {
+      color: $spotifyGreen;
+    }
+    
+    .gh:active {
+      color: #14bc50;
+    }
+
+    
+#gradientBanner {
+  background: linear-gradient(239deg, #1ed760, #1ed7d0, #31df47);
+  background-size: 600% 600%;
+  height:100vh;
+  -webkit-animation: AnimationName 17s ease infinite;
+  -moz-animation: AnimationName 17s ease infinite;
+  animation: AnimationName 17s ease infinite;
+  
+  @-webkit-keyframes AnimationName {
+      0%{background-position:0% 20%}
+      50%{background-position:100% 81%}
+      100%{background-position:0% 20%}
+  }
+  @-moz-keyframes AnimationName {
+      0%{background-position:0% 20%}
+      50%{background-position:100% 81%}
+      100%{background-position:0% 20%}
+  }
+  @keyframes AnimationName { 
+      0%{background-position:0% 20%}
+      50%{background-position:100% 81%}
+      100%{background-position:0% 20%}
+  }
+
+}

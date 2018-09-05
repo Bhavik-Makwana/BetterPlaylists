@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="theme-color" content="#000000">
+    <!--
+      manifest.json provides metadata used when your web app is added to the
+      homescreen on Android. See https://developers.google.com/web/fundamentals/engage-and-retain/web-app-manifest/
+    -->
+    <link rel="stylesheet" type="text/css" href="%PUBLIC_URL%/main.css">
+    <link rel="stylesheet" type="text/css" href="%PUBLIC_URL%/mystyles.css">
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
+    <link rel="shortcut icon" href="%PUBLIC_URL%/Logo.png">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.css.map" rel="stylesheet">
+    <script defer src="https://use.fontawesome.com/releases/v5.1.0/js/all.js"></script>
+
+    <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <title>BetterPlaylists</title>
+  </head>
+  <body id='gradientBanner'>
+    <nav class="navbar is-dark" role="navigation" aria-label="main navigation">
+      <div class="navbar-brand">
+        <a class="navbar-item" href="http://127.0.0.1:8887/#">
+          <img src="%PUBLIC_URL%/BannerLogo.png" alt="bi" width="112" height="24">
+        </a>
+      
+        <a role="button" class="navbar-burger burger" data-target="navMenu" aria-label="menu" aria-expanded="false">
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      
+      
+      </div>
+          
+      <div  class="navbar-menu is-dark">
+        <div class="navbar-start is-dark">
+          <a class="navbar-item is-dark">
+            Playlists
+          </a>
+          <a class="navbar-item is-dark">
+            Mood Sheets
+          </a>
+      
+        </div>
+      
+        <div class="navbar-end">
+          <a class="navbar-item">
+            About
+          </a>
+        </div>
+      </div>
+    </nav>
+      
+    <section class="hero ">
+      <div class="hero-body">
+        <div class="container has-text-centered ">
+          <h1 class=" title bannertext is-1 has-text-white	">
+            Create the listening experience you want.
+          </h1>
+          <h2 class=" title bannertext is-3 has-text-white	">
+            Better Playlists for Spotify
+          </h2>
+        </div>
+      </div>
+    </section>
+        
+    <div class="tile is-vertical is-8">
+      <div class="tile">
+        <div class="tile is-parent is-vertical">
+          <article class="tile is-child notification is-link" id="playlistCreatorBox">
+            <p class="title">Playlist Creator</p>
+            <p id="playlistCreator" class="subtitle"></p>
+          </article>
+        </div>
+      </div>
+    </div>
+    <div id="modal" class="tile is-vertical is-8">
+      <div class="tile">
+        <div class="tile is-parent is-vertical">
+          <article class="tile is-child notification is-link" id="playlistCreatorBox">
+            <p class="title">Playlist Creator</p>
+            <p id="playlistCreator" class="subtitle"></p>
+          </article>
+        </div>
+      </div>
+    </div>
+    <div id='loggedInBox'></div>
+    <div id="root"></div>
+
+    <footer class="footeeer ">
+      <div class="content has-text-centered is-dark">
+        <p id='developer'> Under Development by Bhavik Makwana</p>
+        <a href="https://github.com/Bhavik-Makwana">
+          <i class="gh fab fa-github"></i>
+        </a>
+      </div>
+    </footer>
+  </body>
+</html>
